@@ -2,8 +2,8 @@ name: Playwright Test Suite
 
 on:
   schedule:
-  - cron: '0 21 * * *'
-    timezone: Pacific/Auckland
+    - cron: "0 21 * * *"
+      timezone: Pacific/Auckland
   push:
     branches: [main]
   pull_request:
@@ -22,10 +22,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
 
       - name: Run Playwright tests
         run: npx playwright test
