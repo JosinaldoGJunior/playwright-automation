@@ -1,9 +1,13 @@
 name: Playwright Test Suite
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   schedule:
     - cron: "0 21 * * *"
-      timezone: Pacific/Auckland
   push:
     branches: [main]
   pull_request:
@@ -27,8 +31,26 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Get Playwright version
+        id: playwright-version
+        run: echo "version=$(npm list @playwright/test --depth=0 --json | jq -r '.dependencies["@playwright/test"].version')" >> $GITHUB_OUTPUT
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.playwright-version.outputs.version }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+
       - name: Install Playwright Browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps
+
+      - name: Install system dependencies
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps
 
       - name: Run Playwright tests
         run: npx playwright test
@@ -46,19 +68,19 @@ jobs:
 
       - name: Generate HTML Report
         if: always()
-        run: npx playwright show-report --output=playwright-report --quiet
+        run: npx playwright show-report --reporter=html
 
       - name: Upload HTML Report as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-html-report
-          path: playwright-report
+          path: playwright-report/
           retention-days: 3
 
       - name: Deploy Playwright HTML Report to GitHub Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: playwright-report
