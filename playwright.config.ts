@@ -9,7 +9,10 @@ export default defineConfig({
   workers: 4,
   testMatch: '**/e2e/**/*.spec.ts',
   timeout: 15000,
-  reporter: 'html',
+  reporter: [
+    ['html', { outputFolder: 'playwright-report' }],
+    ['list']
+  ],
   use: {
     baseURL: process.env.BASE_URL,
     headless: true,

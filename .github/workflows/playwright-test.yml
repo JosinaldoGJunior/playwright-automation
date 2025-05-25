@@ -61,10 +61,6 @@ jobs:
           name: playwright-failure-artifacts
           path: test-results/
 
-      - name: Generate HTML Report
-        if: always()
-        run: npx playwright show-report --reporter=html
-
       - name: Upload HTML Report as artifact
         if: always()
         uses: actions/upload-artifact@v4
