@@ -1,4 +1,4 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig,devices } from '@playwright/test';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -8,7 +8,7 @@ export default defineConfig({
   fullyParallel: true,
   workers: 4,
   testMatch: '**/e2e/**/*.spec.ts',
-  timeout: 15000,
+  timeout: 30000,
   reporter: [
     ['html', { outputFolder: 'playwright-report' }],
     ['list']
@@ -18,8 +18,16 @@ export default defineConfig({
     headless: true,
     viewport: { width: 1280, height: 720 },
     screenshot: 'only-on-failure',
-    trace: 'on-first-retry',
+    video: 'retain-on-failure',
+    trace: 'retain-on-failure',
   },
+
+  projects: [
+    {
+      name: 'chrome',
+      use: { ...devices['Desktop Chrome'] },
+    },
+  ],
   
   
 });

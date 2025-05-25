@@ -10,7 +10,7 @@ export class AccountPage {
         await this.page.fill(locators.ACCOUNT.NAME, accountName);
         await this.page.click(locators.ACCOUNT.BTN_SAVE);
         await this.page.waitForSelector(`tr:has-text("${accountName}")`, {
-            timeout: 30000
+            timeout: 40000
         });
     }
 

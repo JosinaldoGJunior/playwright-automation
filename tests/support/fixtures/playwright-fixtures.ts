@@ -1,10 +1,10 @@
 import { test as base, expect } from '@playwright/test';
-import { AccountPage } from '../../pages/AccountPage';
-import { HomePage } from '../../pages/HomePage';
-import { LoginPage } from '../../pages/LoginPage';
-import { ToastPage } from '../../pages/ToastPage';
-import { TransactionPage } from '../../pages/TransactionPage';
-import { ExtractPage } from '../../pages/ExtractPage';
+import { AccountPage } from '../../pages/account-page';
+import { HomePage } from '../../pages/home-page';
+import { LoginPage } from '../../pages/hogin-page';
+import { ToastPage } from '../../pages/toast-page';
+import { TransactionPage } from '../../pages/transaction-page';
+import { ExtractPage } from '../../pages/extract-page';
 
 type Fixtures = {
   account: AccountPage;

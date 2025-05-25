@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { ToastPage } from './ToastPage';
+import { ToastPage } from './toast-page';
 import locators from '../locators';
 
 export class LoginPage {

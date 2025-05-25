@@ -1,5 +1,5 @@
 import { test } from '../support/fixtures/playwright-fixtures';
-import { createTransactionData, createTransactionFixedData } from '../support/utils/transactionData';
+import { createTransactionData, createTransactionFixedData } from '../support/utils/transaction-data';
 import { v4 as uuid } from 'uuid';
 
 test.describe('Transaction Suite', () => {
