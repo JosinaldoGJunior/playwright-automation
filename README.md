@@ -36,9 +36,7 @@ After your test run, Playwright generates an HTML report under `playwright-repor
    ```bash
    npx playwright show-report
    ```
-2. **Upload as CI artifact** in GitHub Actions (example in the CI/CD section below).
-
-The built‑in reporter includes pass/fail status, execution time, screenshots on failure, traces and video recording on retry.
+2. **GitHub Pages** Visit the <a href="https://josinaldogjunior.github.io/playwright-automation/" target="_blank">GitHub Pages site</a> for the latest reports from CI/CD pipeline.
 
 ---
 
