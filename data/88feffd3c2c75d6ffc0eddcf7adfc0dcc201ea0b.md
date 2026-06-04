@@ -1571,6 +1571,8 @@ Call log:
   - option "edit account-88f84b"
   - option "account-6957b0"
   - option "account-ab7279"
+  - option "account-48d14a"
+  - option "account-9e78d8"
   - option "account-815dcb"
   - option "account-463d37"
   - option "account-6cf253"
@@ -1648,6 +1650,7 @@ Call log:
   - option "account-c1a8ff"
   - option "account-ce1701"
   - option "account-4c474d"
+  - option "account-633284"
   - option "account-df1572"
   - option "account-2a70be"
   - option "account-59b371"
@@ -3175,6 +3178,8 @@ Call log:
   - option "account-26836c"
   - option "account-d4060d"
   - option "account-9d5a5f"
+  - option "account-b00348"
+  - option "account-8c10c7"
   - option "account-5f0ebd"
   - option "account-b2e18c"
   - option "account-7ff0ab"
@@ -3193,6 +3198,8 @@ Call log:
   - option "account-d583e6"
   - option "account-179f0f"
   - option "edit account-e1cbd8"
+  - option "edit account-9304bb"
+  - option "account-7ff5f2"
   - option "edit account-c01c00"
   - option "account-d10f13"
   - option "account-0ca462"
@@ -3212,6 +3219,7 @@ Call log:
   - option "account-1c1773"
   - option "account-71095f"
   - option "account-63960b"
+  - option "account-90564c"
   - option "account-afacc3"
   - option "account-47dfae"
 - button " Filtrar por contas a receber"
@@ -3235,6 +3243,13 @@ Call log:
   - link " Deletar Transaction-MsENKO":
     - /url: "#"
 - listitem:
+  - text: Transaction-4SaEtJ R$ 780,51 Daija account-48d14a 03/06/2026 - 03/06/2026
+  - link " Editar Transaction-4SaEtJ":
+    - /url: /movimentacao/2458383
+  - text: "|"
+  - link " Deletar Transaction-4SaEtJ":
+    - /url: "#"
+- listitem:
   - text: Transaction-jovuMo R$ 265,66 Jacky account-cb3816 02/06/2026 - 02/06/2026
   - link " Editar Transaction-jovuMo":
     - /url: /movimentacao/2458294
@@ -3247,6 +3262,13 @@ Call log:
     - /url: /movimentacao/2458293
   - text: "|"
   - link " Deletar Transaction-uPYByP":
+    - /url: "#"
+- listitem:
+  - text: Transaction-fm189Z R$ 295,11 Tomasa account-8c10c7 03/06/2026 - 03/06/2026
+  - link " Editar Transaction-fm189Z":
+    - /url: /movimentacao/2458384
+  - text: "|"
+  - link " Deletar Transaction-fm189Z":
     - /url: "#"
 - listitem:
   - text: Transaction-25EBKE R$ 182,92 Deondre account-f2edd5 01/06/2026 - 01/06/2026
