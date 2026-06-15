@@ -3300,6 +3300,14 @@ Call log:
   - option "account-e5041f"
   - option "account-4a8085"
   - option "account-a2d5df"
+  - option "account-c12b2a"
+  - option "account-6cc462"
+  - option "edit account-044f86"
+  - option "account-1b7b84"
+  - option "account-ee08ae"
+  - option "account-56abba"
+  - option "account-f7d980"
+  - option "account-d01f83"
 - button " Filtrar por contas a receber"
 - button " Sem filtro de pagamentos"
 - button " Filtrar por contas a pagar"
@@ -3354,6 +3362,20 @@ Call log:
     - /url: /movimentacao/2461187
   - text: "|"
   - link " Deletar Transaction-MyjwsB":
+    - /url: "#"
+- listitem:
+  - text: Transaction-Y1wlnf R$ 959,68 Kaci account-ee08ae 14/06/2026 - 14/06/2026
+  - link " Editar Transaction-Y1wlnf":
+    - /url: /movimentacao/2461321
+  - text: "|"
+  - link " Deletar Transaction-Y1wlnf":
+    - /url: "#"
+- listitem:
+  - text: Transaction-DNCVGF R$ 483,12 Robbie account-56abba 14/06/2026 - 14/06/2026
+  - link " Editar Transaction-DNCVGF":
+    - /url: /movimentacao/2461323
+  - text: "|"
+  - link " Deletar Transaction-DNCVGF":
     - /url: "#"
 - listitem:
   - text: Transaction-tY6NrX R$ 928,72 Leonora account-60780f 10/06/2026 - 10/06/2026
