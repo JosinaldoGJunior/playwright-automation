@@ -3433,6 +3433,8 @@ Call log:
   - option "account-2c9cf9"
   - option "account-d228d9"
   - option "account-1a1e85"
+  - option "account-e0a0bc"
+  - option "account-fc7f31"
   - option "account-dbffec"
   - option "account-2e237d"
   - option "edit account-cbd6b9"
@@ -3561,6 +3563,8 @@ Call log:
   - option "account-d5665e"
   - option "account-dfcc10"
   - option "account-6cffd4"
+  - option "account-4b6833"
+  - option "edit account-31e5bb"
   - option "account-9d1dd9"
   - option "account-4b14fd"
   - option "account-46f3f5"
@@ -3658,6 +3662,7 @@ Call log:
   - option "account-fbb6d8"
   - option "account-b9d932"
   - option "account-a5dc00"
+  - option "account-ffa0d7"
   - option "account-f82175"
   - option "account-00bdbc"
   - option "account-d8e56e"
@@ -3679,6 +3684,7 @@ Call log:
   - option "account-2e30dc"
   - option "account-60f3ae"
   - option "account-9c0345"
+  - option "account-f64e86"
   - option "edit account-3df82d"
   - option "account-583955"
   - option "account-49e271"
@@ -3702,6 +3708,8 @@ Call log:
   - option "account-62f3a5"
   - option "account-3e6820"
   - option "account-3c70c9"
+  - option "account-52bcb1"
+  - option "account-78f87a"
   - option "account-97c66e"
   - option "edit account-ff99fa"
   - option "account-0c2d34"
@@ -4013,6 +4021,20 @@ Call log:
     - /url: /movimentacao/2468809
   - text: "|"
   - link " Deletar Transaction-sfNUia":
+    - /url: "#"
+- listitem:
+  - text: Transaction-Axjbqy R$ 999,33 Mason account-52bcb1 10/09/2026 - 10/09/2026
+  - link " Editar Transaction-Axjbqy":
+    - /url: /movimentacao/2468839
+  - text: "|"
+  - link " Deletar Transaction-Axjbqy":
+    - /url: "#"
+- listitem:
+  - text: Transaction-rCX1mI R$ 45,88 Shanelle account-e0a0bc 10/09/2026 - 10/09/2026
+  - link " Editar Transaction-rCX1mI":
+    - /url: /movimentacao/2468838
+  - text: "|"
+  - link " Deletar Transaction-rCX1mI":
     - /url: "#"
 - listitem:
   - text: Transaction-WYlenP R$ 674,28 Garnett account-074b34 01/09/2026 - 01/09/2026
