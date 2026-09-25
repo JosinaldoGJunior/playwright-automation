@@ -3767,6 +3767,9 @@ Call log:
   - option "account-f28063"
   - option "account-81766d"
   - option "account-ea7213"
+  - option "account-8047f9"
+  - option "edit account-a5bc5a"
+  - option "account-92be9e"
   - option "account-c03626"
   - option "edit account-70e010"
   - option "account-886240"
@@ -3794,6 +3797,7 @@ Call log:
   - option "account-79a134"
   - option "edit account-ec1c07"
   - option "account-7016c4"
+  - option "account-c57857"
   - option "account-dd52c7"
   - option "account-2468fa"
   - option "account-183857"
@@ -3853,6 +3857,10 @@ Call log:
   - option "account-27d36a"
   - option "account-94f35d"
   - option "account-43d7c6"
+  - option "account-96fd69"
+  - option "account-124e19"
+  - option "account-2d30e7"
+  - option "account-ed0027"
   - option "edit account-15a039"
   - option "account-7b44c4"
   - option "account-d030f8"
@@ -4295,6 +4303,20 @@ Call log:
     - /url: /movimentacao/2469042
   - text: "|"
   - link " Deletar Transaction-79ZqKq":
+    - /url: "#"
+- listitem:
+  - text: Transaction-0ozNdo R$ 428,98 Zelma account-92be9e 24/09/2026 - 24/09/2026
+  - link " Editar Transaction-0ozNdo":
+    - /url: /movimentacao/2469446
+  - text: "|"
+  - link " Deletar Transaction-0ozNdo":
+    - /url: "#"
+- listitem:
+  - text: Transaction-lElNSp R$ 120,19 Laron account-2d30e7 24/09/2026 - 24/09/2026
+  - link " Editar Transaction-lElNSp":
+    - /url: /movimentacao/2469445
+  - text: "|"
+  - link " Deletar Transaction-lElNSp":
     - /url: "#"
 - listitem:
   - text: Transaction-MG1mSW R$ 261,05 August account-909c5b 16/09/2026 - 16/09/2026
