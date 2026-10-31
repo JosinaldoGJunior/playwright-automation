@@ -14,7 +14,7 @@ Received string: "Movimentação inserida com sucesso!"
 Call log:
   - expect.toContainText with timeout 5000ms
   - waiting for locator('.toast-message').first()
-    8 × locator resolved to <div class="toast-message">Movimentação inserida com sucesso!</div>
+    9 × locator resolved to <div class="toast-message">Movimentação inserida com sucesso!</div>
       - unexpected value "Movimentação inserida com sucesso!"
 
     at ToastPage.checkToast (/home/runner/work/playwright-automation/playwright-automation/tests/pages/toast-page.ts:12:29)
@@ -4379,6 +4379,14 @@ Call log:
   - option "account-ba955d"
   - option "account-6188ee"
   - option "account-a912a4"
+  - option "account-99333f"
+  - option "account-1bd0c0"
+  - option "edit account-39dbb8"
+  - option "account-25ae8a"
+  - option "account-1afb65"
+  - option "account-202610"
+  - option "account-941f4a"
+  - option "account-88ae1c"
 - button " Filtrar por contas a receber"
 - button " Sem filtro de pagamentos"
 - button " Filtrar por contas a pagar"
@@ -4797,6 +4805,20 @@ Call log:
     - /url: /movimentacao/2478023
   - text: "|"
   - link " Deletar Transaction-Ode4wz":
+    - /url: "#"
+- listitem:
+  - text: Transaction-Cax5gP R$ 160,00 Rod account-1afb65 30/10/2026 - 30/10/2026
+  - link " Editar Transaction-Cax5gP":
+    - /url: /movimentacao/2478051
+  - text: "|"
+  - link " Deletar Transaction-Cax5gP":
+    - /url: "#"
+- listitem:
+  - text: Transaction-FUOG97 R$ 983,51 Carlotta account-941f4a 30/10/2026 - 30/10/2026
+  - link " Editar Transaction-FUOG97":
+    - /url: /movimentacao/2478055
+  - text: "|"
+  - link " Deletar Transaction-FUOG97":
     - /url: "#"
 - separator
 - contentinfo:
